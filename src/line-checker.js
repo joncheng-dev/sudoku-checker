@@ -13,9 +13,16 @@ export function occurenceArray(arrayOfNumbers) {
     return result;
 }
 
-export function lineChecker(arrayOfNumbers) {
-    
+export function lineChecker(result) {
+    let comparisonArray = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+    if (comparisonArray.toString() === result.toString()) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+
 
 
 

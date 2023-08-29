@@ -16,4 +16,11 @@ describe('lineChecker', () => {
         let booleanReturned = lineChecker(result);
         expect(booleanReturned).toEqual(true);
     });
+
+    test('It should compare 2 arrays and if their values are not equal return false.', () => {
+        let result = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+        let booleanReturned = lineChecker(result);
+        expect(booleanReturned).toEqual(false);
+    });
 });
+
