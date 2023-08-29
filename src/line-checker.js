@@ -1,5 +1,5 @@
 
-export default function occurenceArray(arrayOfNumbers) {
+export function occurenceArray(arrayOfNumbers) {
     let result = [];
     for (let i = 1; i<=9; i++) {
     let counter = 0;
@@ -11,6 +11,10 @@ export default function occurenceArray(arrayOfNumbers) {
     result.push(counter);
     }
     return result;
+}
+
+export function lineChecker(arrayOfNumbers) {
+    
 }
 
 

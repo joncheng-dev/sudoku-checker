@@ -1,4 +1,5 @@
-import occurenceArray from './../src/line-checker.js';
+import {occurenceArray} from './../src/line-checker.js';
+import {lineChecker} from './../src/line-checker.js';
 
 describe('occurenceArray', () => {
 
@@ -7,4 +8,12 @@ describe('occurenceArray', () => {
     let result = occurenceArray(apple);  
     expect(result).toEqual([1, 1, 1, 1, 1, 1, 1, 1, 1]); 
 });
+});
+
+describe('lineChecker', () => {
+    test('It should take an array of 9 elements, and return true if all 9 values are 1.', () => {
+        let result = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+        let booleanReturned = lineChecker(result);
+        expect(booleanReturned).toEqual(true);
+    });
 });
